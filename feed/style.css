@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+}
+#sites {
+  position: absolute;
+  background: #f2f2f2;
+  width: 200px;
+  top: 0;
+  bottom: 0;
+  border-right: #000;
+}
+#sites .item {
+  position: relative;
+  cursor: pointer;
+  margin: 8px 16px;
+  width: auto;
+  font-weight: 700;
+  font-size: 15px;
+  word-break: break-all;
+  text-decoration: none;
+  white-space: nowrap;
+}
+#sites .item:hover {
+  background: rgba(0,0,0,.02)
+}
+#sites .selected {
+  background: rgba(0,0,0,.05)
+}
+#sites .line {
+  margin: 16px 16px;
+  width: auto;
+  height: 1px;
+  background: #ddd;
+}
+#article {
+  position: absolute;
+  background: #fff;
+  left: 200px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+#article #list {
+  position: inherit;
+  left: 0;
+  width: 300px;
+  top: 0;
+  bottom: 0;
+  /*border-right: 2px solid #000;*/
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#article #include {
+  overflow: auto;
+  position: inherit;
+  margin: 0;
+  left: 300px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+#article #include .title {
+  margin: 70px;
+  font-size: 48px;
+  font-weight: 600;
+}
+#article #include .content {
+  margin: 70px;
+}
+#article #list .list-item {
+  position: relative;
+  background: #fff;
+  margin: 10px;
+  margin-left: 0px;
+  width: auto;
+  min-height: 80px;
+  border-left: 4px solid #fff;
+}
+#article #list .list-item:hover {
+  border-left: 4px solid #282;
+}
+#article #list .selected {
+  border-left: 4px solid #0a0;
+}
+#article #list .list-item .title {
+  color: rgb(51, 103, 214);
+  font-weight: 700;
+  font-size: 15px;
+  word-break: break-all;
+  text-decoration: none;
+  white-space: nowrap;
+  width: 100%;
+  margin-left: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#article #list .list-item .link {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+#article #list .list-item .link a {
+  color: rgb(117, 117, 117);
+  text-decoration: none;
+}
+#article #list .list-item .date {
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 12px;
+}
+#article #list .list-item .control {
+  position: absolute;
+  bottom: 2px;
+  right: 0;
+  text-align: right;
+}
+#article #list .list-item .control span{
+  font-size: 28px;
+  cursor: pointer;
+}
