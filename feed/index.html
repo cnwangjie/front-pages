@@ -6,15 +6,28 @@
     <link rel="stylesheet" href="./style.css"></link>
   </head>
   <body>
+    <aside id="panel" style="display:none;">
+      <div class="panel-item"><span>Add feed</span></div>
+      <div id="delete-feed" class="panel-item"><span>Delete this feed</span></div>
+      <div id="edit-feed" class="panel-item"><span>Edit this feed</span></div>
+      <div id="add-tags" class="panel-item"><span>Add tags</span></div>
+    </aside>
     <div id="sites">
-      <div class="item">Feed</div>
-      <div class="line"></div>
-      <div class="item">Unread</div>
-      <div class="item">Star</div>
-      <div class="item">All</div>
-      <div class="line"></div>
-      <div class="item selected">Matrix67: The Aha Moments</div>
-    </div>
+      <div id="title"><span>Feeds<span></div>
+      <div id="site-list">
+        <div class="item">Unread</div>
+        <div class="item">Star</div>
+        <div class="item">All</div>
+        <div class="line"><span>Sites</span></div>
+        <div class="item site-item selected">Matrix67: The Aha Moments</div>
+        <div class="item site-item">Solidot</div>
+        <div class="item site-item">Engadget</div>
+        <div class="line"><span>Tags</span></div>
+      </div>
+      <div id="footer">
+        <span>&copy Wang Jie 2017</span>
+      </div>
+   </div>
     <div id="article">
       <div id="list">
         <div class="list-item">
@@ -23,7 +36,7 @@
           <div class="date">Tue, 18 Oct 2016 15:32:59 +0000</div>
           <div class="control">
             <span class="share">+</span>
-            <span class="star">☆</span>
+            <span class="stared">★</span>
           </div>
         </div>
         <div class="list-item selected">
@@ -39,6 +52,69 @@
           <div class="title">UyHiP 趣题：几个特殊的强正则图</div>
           <div class="link"><a href="http://www.matrix67.com/blog/archives/6877" target="_blank">http://www.matrix67.com/blog/archives/6877</a></div>
           <div class="date">Sat, 03 Sep 2016 20:21:23 +0000</div>
+          <div class="control">
+            <span class="share">+</span>
+            <span class="star">☆</span>
+          </div>
+        </div>
+        <div class="list-item">
+          <div class="title">趣题：为什么偏偏是 6 格？</div>
+          <div class="link"><a href="http://www.matrix67.com/blog/archives/6862" target="_blank">http://www.matrix67.com/blog/archives/6862</a></div>
+          <div class="date">Fri, 02 Sep 2016 14:00:51 +0000</div>
+          <div class="control">
+            <span class="share">+</span>
+            <span class="stared">★</span>
+          </div>
+        </div>
+        <div class="list-item">
+          <div class="title">IMO2016 趣题：Geoff 的青蛙</div>
+          <div class="link"><a href="http://www.matrix67.com/blog/archives/6851" target="_blank">http://www.matrix67.com/blog/archives/6851</a></div>
+          <div class="date">Wed, 24 Aug 2016 01:22:05 +0000</div>
+          <div class="control">
+            <span class="share">+</span>
+            <span class="star">☆</span>
+          </div>
+        </div>
+        <div class="list-item">
+          <div class="title">捡石子游戏、 Wythoff 数表和一切的 Fibonacci 数列</div>
+          <div class="link"><a href="http://www.matrix67.com/blog/archives/6784" target="_blank">http://www.matrix67.com/blog/archives/6784</a></div>
+          <div class="date">Tue, 21 Jun 2016 15:02:30 +0000</div>
+          <div class="control">
+            <span class="share">+</span>
+            <span class="star">☆</span>
+          </div>
+        </div>
+        <div class="list-item">
+          <div class="title">如果把 3 · n + 1 问题改为 3x · n + 1 问题</div>
+          <div class="link"><a href="http://www.matrix67.com/blog/archives/6756" target="_blank">http://www.matrix67.com/blog/archives/6756</a></div>
+          <div class="date">Mon, 02 May 2016 14:52:06 +0000</div>
+          <div class="control">
+            <span class="share">+</span>
+            <span class="star">☆</span>
+          </div>
+        </div>
+        <div class="list-item">
+          <div class="title">趣题：两个方阵是怎样互相穿过对方的？</div>
+          <div class="link"><a href="http://www.matrix67.com/blog/archives/6750" target="_blank">http://www.matrix67.com/blog/archives/6750</a></div>
+          <div class="date">Sat, 30 Apr 2016 03:38:17 +0000</div>
+          <div class="control">
+            <span class="share">+</span>
+            <span class="star">☆</span>
+          </div>
+        </div>
+        <div class="list-item">
+          <div class="title">26 个比较概率大小的问题</div>
+          <div class="link"><a href="http://www.matrix67.com/blog/archives/6665" target="_blank">http://www.matrix67.com/blog/archives/6665</a></div>
+          <div class="date">Wed, 27 Apr 2016 09:09:35 +0000</div>
+          <div class="control">
+            <span class="share">+</span>
+            <span class="star">☆</span>
+          </div>
+        </div>
+        <div class="list-item">
+          <div class="title">趣题：如果每次只增加一个区域的话</div>
+          <div class="link"><a href="http://www.matrix67.com/blog/archives/6655" target="_blank">http://www.matrix67.com/blog/archives/6655</a></div>
+          <div class="date">Thu, 21 Apr 2016 13:40:02 +0000</div>
           <div class="control">
             <span class="share">+</span>
             <span class="star">☆</span>
