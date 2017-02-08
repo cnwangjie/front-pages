@@ -114,3 +114,12 @@ body {
   margin: 0 -15px -10px -15px;
   padding: 15px;
 }
+
+.l-text img {
+  width: 100%;
+  height: auto;
+}
+
+.l-text audio {
+  width: 500px;
+}
