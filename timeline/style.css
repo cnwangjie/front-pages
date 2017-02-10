@@ -123,3 +123,29 @@ body {
 .l-text audio {
   width: 500px;
 }
+
+.l-text a {
+  text-decoration: none;
+  color: #15c;
+}
+
+.l-text a:hover {
+  text-decoration: underline;
+}
+
+.l-text a:active {
+  color: #d14836;
+}
+
+.l-text del {
+  color: #c3c3c3;
+}
+
+.l-text hide {
+  color: black;
+  background: black;
+}
+
+.l-text hide:hover {
+  color: white;
+}

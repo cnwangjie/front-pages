@@ -9,58 +9,71 @@
       position: fixed;
       width: 100%;
       height: 100%;
-      box-shadow: inset 0 0 4000px rgba(0,0,0,.5);
+      box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+      background: #333;
+      color: #fff;
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+    .container {
+      display: table;
+      width: 100%;
+      height: 100%;
     }
     ul {
       padding: 0;
+      display: table-cell;
       vertical-align: middle;
       margin: 40px auto;
       text-align: center;
       list-style: none;
     }
-    label {
+    h3 {
+      margin-bottom: 10px;
       font-weight: 500;
-      line-height: 80px;
-      font-size: 80px;
+      font-size: 36px;
       color: white;
-      font-family: sans-serif;
       text-shadow: 0px 0px 20px black;
     }
+    p {
+      margin: 0 0 10px;
+      font-weight: 300;
+      line-height: 1.4;
+      font-size: 21px;
+      text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    }
     li {
-      margin: 24px 0;
+      margin: 20px 0;
     }
     li:hover::before {
       content: ">";
-      color: white;
       text-shadow: 0px 0px 8px black;
-      font-weight: bold;
-      font-size: 48px;
+      font-size: 21px;
       margin-right: 20px;
     }
     li:hover::after {
       content: "<";
-      color: white;
       text-shadow: 0px 0px 8px black;
-      font-weight: bold;
-      font-size: 48px;
+      font-size: 21px;
       margin-left: 20px;
     }
     a {
-      font-family: sans-serif;
-      font-size: 48px;
+      font-size: 21px;
       font-weight: bold;
-      color: white;
       text-shadow: 0px 0px 8px black;
       text-decoration: none;
+      color: #fff;
     }
     </style>
   </head>
   <body>
-    <ul>
-      <label>front-pages list</label>
-      <li><a href="./feed">feed</a></li>
-      <li><a href="./downloads">download</a></li>
-      <li><a href="./timeline">timeline</a></li>
-    </ul>
+    <div class="container">
+      <ul>
+        <h3>Front-Pages List</h3>
+        <p>Here are some of my web page works, you can pick one from following to see one of them.</p>
+        <li><a href="./feed">feed</a></li>
+        <li><a href="./downloads">download</a></li>
+        <li><a href="./timeline">timeline</a></li>
+      </ul>
+  </div>
   </body>
 </html>
