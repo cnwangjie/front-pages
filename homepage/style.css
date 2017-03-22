@@ -1,0 +1,165 @@
+body {
+  text-align: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  color: #000;
+  font-family: "Proxima Nova", Tahoma, Helvetica, Verdana, sans-serif;
+}
+
+.container {
+  display: table;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-image: linear-gradient(135deg, #305B90 0%, #305B90 30%, #529bf5 100%);;
+  /*box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
+}
+
+.main {
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.inner {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+  background: #fff;
+  width: 620px;
+}
+
+.inner-content {
+  padding: 20px;
+}
+
+.header {
+  font-size: 24px;
+  line-height: 48px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  margin: 0;
+  color: #333;
+}
+
+.message {
+  margin: 20px 90px 0;
+  padding: 0;
+  outline: 0;
+  color: #666;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 19.2px;
+}
+
+.btns {
+  padding: 20px 0 0;
+}
+
+.btn {
+  background: #305B90;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  white-space: nowrap;
+  user-select: none;
+  margin: 0;
+  outline: 0;
+  vertical-align: baseline;
+  line-height: 38px;
+  transition: all .3s;
+  padding: 0 20px 0;
+}
+
+.btn:hover {
+  transition: all .3s;
+  background: #597ca6;
+}
+
+.links {
+  display: block;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.link {
+  display: inline-block;
+  margin: 5px;
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: #9f9f9f;
+}
+
+.link:hover {
+  color: #999;
+}
+
+.leader {
+  font-size: 18px;
+  margin: 12px 0 8px 0;
+}
+
+.content {
+  margin: 2px 0 8px 0;
+  font-size: 22px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 12px 0;
+  /*border-top: 1px solid #000;*/
+}
+
+.list li {
+  display: inline-block;
+  margin: 12px 4px 12px 4px;
+}
+
+.list a {
+  background: #fff;
+  padding: 8px 16px;
+  font-weight: bold;
+  color: #333;
+  text-shadow: none;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.list a:hover {
+  color: rgb(51, 51, 51);
+  background: rgb(230, 230, 230);
+  border-color: rgb(173, 173, 173);
+}
+
+@media screen and (max-width: 980px) {
+  .inner {
+    width: 95%;
+  }
+
+  .header {
+    font-size: 72px;
+    margin: 60px 0;
+  }
+
+  .message {
+    font-size: 48px;
+    line-height: 60px;
+    margin: 12px 0 0;
+  }
+
+  .link {
+    font-size: 70px;
+    line-height: 80px;
+  }
+}
