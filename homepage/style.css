@@ -101,6 +101,7 @@ body {
 
 .link:hover {
   color: #999;
+  text-decoration: underline;
 }
 
 .leader {
@@ -142,24 +143,37 @@ body {
   border-color: rgb(173, 173, 173);
 }
 
+.contact {
+  margin: 10px 20px;
+  color: #9f9f9f;
+}
+
+.contact p {
+  font-size: 13px;
+  margin: 0;
+}
+
+.code {
+  /*color: #ff5722;*/
+  /*background: rgba(255, 152, 0, 0.15);*/
+}
+
 @media screen and (max-width: 980px) {
   .inner {
     width: 95%;
   }
 
+  .inner-content {
+    padding: 5px;
+  }
+
   .header {
-    font-size: 72px;
-    margin: 60px 0;
   }
 
   .message {
-    font-size: 48px;
-    line-height: 60px;
-    margin: 12px 0 0;
+    margin: 20px 10px 0;
   }
 
   .link {
-    font-size: 70px;
-    line-height: 80px;
   }
 }
