@@ -8,12 +8,20 @@ body {
   font-family: "Proxima Nova", Tahoma, Helvetica, Verdana, sans-serif;
 }
 
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: #f00;
+}
+
 .container {
   display: table;
   height: 100%;
   width: 100%;
   margin: 0;
-  background-image: linear-gradient(135deg, #305B90 0%, #305B90 30%, #529bf5 100%);
+  background: gray;
   background-repeat: no-repeat;
   background-size: cover;
   /*box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/

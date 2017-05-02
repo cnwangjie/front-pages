@@ -26,11 +26,10 @@ mail.onmouseover = function(e) {
 }
 
 function bg() {
-  var container = document.getElementsByClassName('container')[0]
   if (window.innerHeight < window.innerWidth) {
-    container.style.backgroundImage = 'url(https://unsplash.it/1080/600/?random)'
+    fetchimg('https://unsplash.it/1080/600/?random')
   } else {
-    container.style.backgroundImage = 'url(https://unsplash.it/600/1080/?random)'
+    fetchimg('https://unsplash.it/600/1080/?random')
   }
 }
 
@@ -43,3 +42,12 @@ function yy() {
 }
 
 yy()
+
+function fetchimg(url) {
+  fetch(url)
+    .then(d => d.blob())
+    .then(d => URL.createObjectURL(d))
+    .then(d => {
+      document.getElementsByClassName('container')[0].style.backgroundImage = `url(${d})`
+    })
+}
