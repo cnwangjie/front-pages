@@ -16,7 +16,18 @@ aside {
   background: #f00;
 }
 
-#bg {
+.progress {
+  transition: width 1s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  background: lightblue;
+  box-shadow: 0px 1px 5px 1px black;
+  z-index: 9;
+}
+
+.bg {
   transition: opacity 4s ease-in-out;
   height: 100%;
   left: 0;
@@ -24,33 +35,46 @@ aside {
   position: fixed;
   top: 0;
   width: 100%;
-  background: gray;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+	animation: Gradient 15s ease infinite;
   z-index: -1;
 }
 
-#bg .cur {
-  -moz-transition: opacity 2s ease-in-out;
-  -webkit-transition: opacity 2s ease-in-out;
-  -ms-transition: opacity 2s ease-in-out;
-  transition: opacity 2s ease-in-out;
+.bg .cur {
   height: 100%;
   left: 0;
-  opacity: 0;
   position: fixed;
   top: 0;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0;
   visibility: visible;
+  animation: FadeIn 1s;
   z-index: 2;
 }
 
-#bg .pre {
-  z-index: 1;
+@keyframes FadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
 
 .main {
   display: flex;
@@ -131,7 +155,6 @@ aside {
 
 .link {
   display: inline-block;
-  margin: 5px;
   text-decoration: none;
   font-size: 14px;
   cursor: pointer;
@@ -157,7 +180,6 @@ aside {
   list-style: none;
   padding: 0;
   margin: 20px 0 12px 0;
-  /*border-top: 1px solid #000;*/
 }
 
 .list li {
@@ -192,11 +214,6 @@ aside {
   margin: 0;
 }
 
-.code {
-  /*color: #ff5722;*/
-  /*background: rgba(255, 152, 0, 0.15);*/
-}
-
 .footer {
   position: absolute;
   bottom: 20px;
@@ -220,13 +237,7 @@ aside {
     padding: 5px;
   }
 
-  .header {
-  }
-
   .message {
     margin: 20px 10px 0;
-  }
-
-  .link {
   }
 }
